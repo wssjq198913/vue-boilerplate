@@ -58,13 +58,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       favicon: path.join(__dirname, '..', 'favicon.ico'),
       chunks: ['app', 'vendor']
     }),
-    new HtmlWebpackPlugin({
-      filename: 'document.html',
-      template: 'index.html',
-      inject: true,
-      favicon: path.join(__dirname, '..', 'favicon.ico'),
-      chunks: ['document', 'vendor']
-    }),
     // copy custom static assets
     new CopyWebpackPlugin([
       {
